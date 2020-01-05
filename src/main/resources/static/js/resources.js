@@ -3,8 +3,8 @@
   angular.module('app')
   .factory('Blogs', ['$resource', function($resource) {
     return $resource('/blog', {}, {
-      query: {method: 'GET', url: '/blogs', isArray: true},
-      save: {method: 'POST', url: '/new/blog'}
+      query: {method: 'GET', url: '/blog/all', isArray: true},
+      save: {method: 'POST', url: '/blog/new'}
     });
   }]);
 })();

@@ -1,0 +1,12 @@
+server:
+  port: 5000
+
+ribbon:
+  eureka:
+    enabled: false
+
+zuul:
+  routes:
+    blog:
+      path: /blog/**
+      url: http://localhost:8080/blog
